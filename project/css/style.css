@@ -332,6 +332,65 @@ p {
     margin-top: -5px;
 }
 
+/* Footer review form */
+.footer-review-card {
+    background: linear-gradient(145deg, rgba(9, 20, 19, 0.95), rgba(5, 11, 10, 0.98));
+    border: 1px solid rgba(40, 90, 72, 0.35);
+}
+
+.footer-review-input {
+    height: 45px;
+    border-color: rgba(40, 90, 72, 0.4) !important;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+textarea.footer-review-input{
+    height:110px;
+    resize:none;
+}
+
+.footer-review-input:focus {
+    border-color: var(--secondary-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(64, 138, 113, 0.2);
+}
+
+.footer-star-rating .star{
+
+    width:28px;
+    height:28px;
+
+    color:#5c6d66;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.footer-star-rating .star:hover{
+
+    transform:scale(1.2);
+
+}
+
+.footer-star-rating .star.active{
+
+    color:#FFD54F;
+
+    fill:#FFD54F;
+
+    transform:scale(1.1);
+
+}
+
+.footer-review-btn {
+    font-family: var(--font-subheadings);
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
 /* Custom Scrollbar for HTML site */
 ::-webkit-scrollbar {
     width: 8px;
