@@ -12,7 +12,7 @@
 <body>
 
     <!-- Sticky Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom scrolled">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
         <div class="container px-4">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
                 <div class="p-2 bg-success rounded-3 d-flex align-items-center justify-content-center" style="width: 2.25rem; height: 2.25rem; background-color: var(--primary-color) !important;">
@@ -29,27 +29,24 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 me-4">
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="index.php">Home</a>
+                        <a class="nav-link nav-link-custom active" href="index.php#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="about.php">About</a>
+                        <a class="nav-link nav-link-custom" href="index.php#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-custom" href="services.php">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom active" href="team.php">Team</a>
+                        <a class="nav-link nav-link-custom" href="team.php">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="testimonials.php">Testimonials</a>
+                        <a class="nav-link nav-link-custom" href="index.php#testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="contact.php">Contact</a>
+                        <a class="nav-link nav-link-custom" href="index.php#contact">Contact</a>
                     </li>
                 </ul>
-                <a href="contact.php" class="btn btn-primary-custom d-flex align-items-center gap-2">
-                    Get Consultation <i data-lucide="arrow-right" style="width: 1rem; height: 1rem;"></i>
-                </a>
             </div>
         </div>
     </nav>
@@ -63,7 +60,7 @@
             <h1 class="display-4 fw-bold text-white mb-4" style="font-family: var(--font-headings); max-width: 800px; margin: 0 auto; line-height: 1.15;">
                 The <span style="color: var(--accent-color);">Strategic Partners</span> of Verdant
             </h1>
-            <p class="lead text-muted mx-auto" style="max-width: 600px;">
+            <p class="lead  mx-auto" style="max-width: 600px;">
                 We bring together industry pioneers with proven track records across Swiss capital structures, luxury visual branding, and top-tier software organizations.
             </p>
         </div>
@@ -78,14 +75,9 @@
                     <div class="p-5 rounded-4 d-flex flex-column flex-md-row gap-4 h-100" style="background-color: #050b0a; border: 1px solid rgba(40, 90, 72, 0.2);">
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=350&h=350" alt="Eleanor Vance" class="img-fluid rounded-3 mb-3 mb-md-0 shadow-sm shrink-0" style="width: 160px; height: 160px; object-fit: cover;">
                         <div>
-                            <span class="subheading d-block mb-1" style="font-size: 0.55rem; color: var(--secondary-color);">Principal & Co-Founder</span>
                             <h3 class="h4 text-white fw-bold mb-3">Eleanor Vance</h3>
-                            <p class="small text-muted mb-4">Over 15 years of corporate advisory and sustainable development. Former Strategy Lead at McKinsey, passionate about green-tech scalability.</p>
+                            <p class="small  mb-4">Over 15 years of corporate advisory and sustainable development. Former Strategy Lead at McKinsey, passionate about green-tech scalability.</p>
                             <div class="d-flex align-items-center justify-content-between mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="#" class="p-1.5 rounded bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="linkedin" style="width: 0.85rem; height: 0.85rem;"></i></a>
-                                    <a href="#" class="p-1.5 rounded bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="twitter" style="width: 0.85rem; height: 0.85rem;"></i></a>
-                                </div>
                                 <a href="mailto:eleanor@verdant.com" class="text-decoration-none small subheading" style="color: var(--accent-color) !important; font-size: 0.6rem;">eleanor@verdant.com</a>
                             </div>
                         </div>
@@ -97,14 +89,9 @@
                     <div class="p-5 rounded-4 d-flex flex-column flex-md-row gap-4 h-100" style="background-color: #050b0a; border: 1px solid rgba(40, 90, 72, 0.2);">
                         <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=350&h=350" alt="Marcus Thorne" class="img-fluid rounded-3 mb-3 mb-md-0 shadow-sm shrink-0" style="width: 160px; height: 160px; object-fit: cover;">
                         <div>
-                            <span class="subheading d-block mb-1" style="font-size: 0.55rem; color: var(--secondary-color);">Head of Experience & Design</span>
                             <h3 class="h4 text-white fw-bold mb-3">Marcus Thorne</h3>
-                            <p class="small text-muted mb-4">An award-winning visual architect with a rich background in luxury brand design. Believes true elegance lies in minimalism.</p>
+                            <p class="small  mb-4">An award-winning visual architect with a rich background in luxury brand design. Believes true elegance lies in minimalism.</p>
                             <div class="d-flex align-items-center justify-content-between mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="#" class="p-1.5 rounded bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="linkedin" style="width: 0.85rem; height: 0.85rem;"></i></a>
-                                    <a href="#" class="p-1.5 rounded bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="github" style="width: 0.85rem; height: 0.85rem;"></i></a>
-                                </div>
                                 <a href="mailto:marcus@verdant.com" class="text-decoration-none small subheading" style="color: var(--accent-color) !important; font-size: 0.6rem;">marcus@verdant.com</a>
                             </div>
                         </div>
@@ -116,14 +103,9 @@
                     <div class="p-5 rounded-4 d-flex flex-column flex-md-row gap-4 h-100" style="background-color: #050b0a; border: 1px solid rgba(40, 90, 72, 0.2);">
                         <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=350&h=350" alt="Seraphina Chen" class="img-fluid rounded-3 mb-3 mb-md-0 shadow-sm shrink-0" style="width: 160px; height: 160px; object-fit: cover;">
                         <div>
-                            <span class="subheading d-block mb-1" style="font-size: 0.55rem; color: var(--secondary-color);">Lead Sustainability Consultant</span>
                             <h3 class="h4 text-white fw-bold mb-3">Dr. Seraphina Chen</h3>
-                            <p class="small text-muted mb-4">Ph.D. in Environmental Sciences from Stanford. Author of "The Eco-Efficient Enterprise" and leading authority on ESG carbon audits.</p>
+                            <p class="small  mb-4">Ph.D. in Environmental Sciences from Stanford. Author of "The Eco-Efficient Enterprise" and leading authority on ESG carbon audits.</p>
                             <div class="d-flex align-items-center justify-content-between mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="#" class="p-1.5 rounded bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="linkedin" style="width: 0.85rem; height: 0.85rem;"></i></a>
-                                    <a href="#" class="p-1.5 rounded bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="twitter" style="width: 0.85rem; height: 0.85rem;"></i></a>
-                                </div>
                                 <a href="mailto:seraphina@verdant.com" class="text-decoration-none small subheading" style="color: var(--accent-color) !important; font-size: 0.6rem;">seraphina@verdant.com</a>
                             </div>
                         </div>
@@ -135,14 +117,9 @@
                     <div class="p-5 rounded-4 d-flex flex-column flex-md-row gap-4 h-100" style="background-color: #050b0a; border: 1px solid rgba(40, 90, 72, 0.2);">
                         <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=350&h=350" alt="Julian Vance" class="img-fluid rounded-3 mb-3 mb-md-0 shadow-sm shrink-0" style="width: 160px; height: 160px; object-fit: cover;">
                         <div>
-                            <span class="subheading d-block mb-1" style="font-size: 0.55rem; color: var(--secondary-color);">Director of Process Optimization</span>
                             <h3 class="h4 text-white fw-bold mb-3">Julian Vance</h3>
-                            <p class="small text-muted mb-4">Automation specialist with a background in systems engineering. Architected digital backbones for multiple Fortune 500 startups.</p>
+                            <p class="small  mb-4">Automation specialist with a background in systems engineering. Architected digital backbones for multiple Fortune 500 startups.</p>
                             <div class="d-flex align-items-center justify-content-between mt-auto">
-                                <div class="d-flex gap-2">
-                                    <a href="#" class="p-1.5 rounded bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="linkedin" style="width: 0.85rem; height: 0.85rem;"></i></a>
-                                    <a href="#" class="p-1.5 rounded bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="github" style="width: 0.85rem; height: 0.85rem;"></i></a>
-                                </div>
                                 <a href="mailto:julian@verdant.com" class="text-decoration-none small subheading" style="color: var(--accent-color) !important; font-size: 0.6rem;">julian@verdant.com</a>
                             </div>
                         </div>
@@ -167,43 +144,13 @@
                         </div>
                     </a>
                     <p class="mb-4">Engineered guidance for the contemporary enterprise. Harmonizing commercial growth with sustainability and modern design paradigms.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="p-2 rounded-3 bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="width: 2rem; height: 2rem; border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="linkedin" style="width: 0.95rem; height: 0.95rem;"></i></a>
-                        <a href="#" class="p-2 rounded-3 bg-dark border border-success text-white d-flex align-items-center justify-content-center" style="width: 2rem; height: 2rem; border-color: rgba(40, 90, 72, 0.3) !important;"><i data-lucide="twitter" style="width: 0.95rem; height: 0.95rem;"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white h6 mb-4" style="font-family: var(--font-subheadings); letter-spacing: 1px; font-weight: 700;">PRACTICE AREAS</h5>
-                    <ul class="list-unstyled d-flex flex-col gap-2.5">
-                        <li><a href="services.php" class="text-decoration-none text-muted small">Strategic Consulting</a></li>
-                        <li><a href="services.php" class="text-decoration-none text-muted small">Eco-System Design</a></li>
-                        <li><a href="services.php" class="text-decoration-none text-muted small">Workflow Optimization</a></li>
-                        <li><a href="services.php" class="text-decoration-none text-muted small">ESG Advisory</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white h6 mb-4" style="font-family: var(--font-subheadings); letter-spacing: 1px; font-weight: 700;">COMPANY</h5>
-                    <ul class="list-unstyled d-flex flex-col gap-2.5">
-                        <li><a href="about.php" class="text-decoration-none text-muted small">Story & Vision</a></li>
-                        <li><a href="team.php" class="text-decoration-none text-muted small">Advisory Council</a></li>
-                        <li><a href="testimonials.php" class="text-decoration-none text-muted small">Appraisals</a></li>
-                        <li><a href="contact.php" class="text-decoration-none text-muted small">Get in Touch</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h5 class="text-white h6 mb-4" style="font-family: var(--font-subheadings); letter-spacing: 1px; font-weight: 700;">ADVISORY DIGEST</h5>
-                    <p class="small mb-4">Subscribe to receive our seasonal briefs on sustainable business paradigms and operational agility.</p>
-                    <form class="d-flex gap-2">
-                        <input type="email" placeholder="Email address" class="form-control bg-dark text-white border-success" style="font-size: 0.75rem; border-color: rgba(40, 90, 72, 0.4) !important;">
-                        <button type="submit" class="btn btn-primary-custom" style="padding: 0.5rem 1rem;"><i data-lucide="send" style="width: 0.85rem; height: 0.85rem;"></i></button>
-                    </form>
                 </div>
             </div>
             <div class="d-flex flex-column flex-md-row align-items-center justify-content-between pt-4 border-top" style="border-top-color: rgba(40, 90, 72, 0.15) !important;">
                 <p class="small mb-0">© 2026 Verdant Consulting Group. All Rights Reserved.</p>
                 <div class="d-flex gap-4 mt-3 mt-md-0">
-                    <a href="#" class="text-decoration-none text-muted small">Privacy Policy</a>
-                    <a href="#" class="text-decoration-none text-muted small">Terms of Engagement</a>
+                    <a href="#" class="text-decoration-none " style="color: #a0b8ad">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none " style="color: #a0b8ad">Terms of Engagement</a>
                 </div>
             </div>
         </div>
