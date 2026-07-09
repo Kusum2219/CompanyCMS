@@ -145,30 +145,74 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 6. Inbound Request Form Handlers (Mock Alerts)
+    // 6. Contact Form
     const contactForm = document.getElementById('advisory-contact-form');
-    contactForm?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        if (submitBtn) {
-            submitBtn.textContent = 'Securing Line...';
-            submitBtn.setAttribute('disabled', 'true');
-        }
 
-        setTimeout(() => {
-            alert('Your strategic advisory inquiry has been logged! Our Swiss principal team will call you back in less than 2 hours.');
-            contactForm.reset();
-            if (submitBtn) {
-                submitBtn.textContent = 'Transmit Consultation Request';
-                submitBtn.removeAttribute('disabled');
-            }
-        }, 1500);
+    contactForm?.addEventListener('submit', () => {
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+        submitBtn.innerHTML = `
+            <span class="spinner-border spinner-border-sm me-2"></span>
+            Sending...
+        `;
+
+        submitBtn.disabled = true;
+
     });
 
-    const appraisalForm = document.getElementById('review-appraisal-form');
-    appraisalForm?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thank you! Your executive satisfaction appraisal has been recorded in our institutional ledger.');
-        appraisalForm.reset();
+    // Footer Review Form
+    const reviewForm = document.getElementById('footer-review-form');
+
+    reviewForm?.addEventListener('submit', () => {
+
+        const submitBtn = reviewForm.querySelector('button[type="submit"]');
+
+        submitBtn.innerHTML = `
+            <span class="spinner-border spinner-border-sm me-2"></span>
+            Submitting...
+        `;
+
+        submitBtn.disabled = true;
+
+    });
+
+
+    // 7. Footer Experience Form Star Rating
+    const stars = document.querySelectorAll('#footer-star-rating .star');
+    const ratingInput = document.getElementById('footer-rating-input');
+
+    function updateStars(rating){
+
+        stars.forEach((star,index)=>{
+
+            if(index<rating){
+
+                star.classList.add('active');
+
+            }else{
+
+                star.classList.remove('active');
+
+            }
+
+        });
+
+    }
+
+    updateStars(5);
+
+    stars.forEach(star=>{
+
+        star.addEventListener('click',()=>{
+
+            const rating=parseInt(star.dataset.value);
+
+            ratingInput.value=rating;
+
+            updateStars(rating);
+
+        });
+
     });
 });
