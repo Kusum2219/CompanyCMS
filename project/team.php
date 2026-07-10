@@ -133,7 +133,7 @@
     <footer class="py-5" style="background-color: #050b0a; border-top: 1px solid rgba(40, 90, 72, 0.15);">
         <div class="container px-4 py-4 text-start">
             <div class="row g-5 mb-5">
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <a class="d-flex align-items-center gap-2 text-decoration-none mb-4" href="index.php">
                         <div class="p-2 bg-success rounded-3 d-flex align-items-center justify-content-center" style="width: 2rem; height: 2rem; background-color: var(--primary-color) !important;">
                             <i data-lucide="leaf" style="color: var(--accent-color); width: 1rem; height: 1rem;"></i>
@@ -145,12 +145,68 @@
                     </a>
                     <p class="mb-4">Engineered guidance for the contemporary enterprise. Harmonizing commercial growth with sustainability and modern design paradigms.</p>
                 </div>
+
+                <div class="col-lg-7">
+                    <!-- <div class="footer-review-card p-4 p-md-5 rounded-4"> -->
+                    <div class="footer-review-card p-3 p-md-4 rounded-4 mx-auto" style="max-width:550px;">    
+                        <!-- <h2 class="h4 text-white mb-4" style="font-family: var(--font-headings);">Experience</h2> -->
+                        <span class="navbar-brand-text h6 m-0 text-white">Share Your Experience</span>
+                        <form action="submit_testimonial.php" method="POST" class="d-flex flex-column gap-2" id="footer-review-form">
+                            <div>
+                                <label class="form-label text-white" for="footer-review-name">Full Name</label>
+                                <input type="text" id="footer-review-name" name="name" class="form-control bg-dark text-white border-success footer-review-input" placeholder="Enter your name" required>
+                            </div>
+
+                            <div>
+                                <label class="form-label text-white">Rating</label>
+                                <div class="d-flex gap-2 footer-star-rating" id="footer-star-rating">
+
+                                    <i data-lucide="star" class="star" data-value="1"></i>
+
+                                    <i data-lucide="star" class="star" data-value="2"></i>
+
+                                    <i data-lucide="star" class="star" data-value="3"></i>
+
+                                    <i data-lucide="star" class="star" data-value="4"></i>
+
+                                    <i data-lucide="star" class="star" data-value="5"></i>
+                                </div>
+
+                                <input type="hidden" name="rating" id="footer-rating-input" value="5" required>
+                            </div>
+
+                            <div>
+                                <label class="form-label text-white" for="footer-review-text">Review</label>
+                                <textarea id="footer-review-text" name="review" class="form-control bg-dark text-white border-success footer-review-input" rows="4" placeholder="Write your review here..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary-custom w-100 py-2 footer-review-btn">
+                                Submit Review
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
             <div class="d-flex flex-column flex-md-row align-items-center justify-content-between pt-4 border-top" style="border-top-color: rgba(40, 90, 72, 0.15) !important;">
                 <p class="small mb-0">© 2026 Verdant Consulting Group. All Rights Reserved.</p>
                 <div class="d-flex gap-4 mt-3 mt-md-0">
-                    <a href="#" class="text-decoration-none " style="color: #a0b8ad">Privacy Policy</a>
-                    <a href="#" class="text-decoration-none " style="color: #a0b8ad">Terms of Engagement</a>
+
+                    <a href="#" class="text-decoration-none small" style="color:#a0b8ad;">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="text-decoration-none small" style="color:#a0b8ad;">
+                        Terms of Engagement
+                    </a>
+
+                    <a href="admin/login.php"
+                    class="text-decoration-none small"
+                    style="color:#408A71;font-weight:600;">
+                        <i data-lucide="shield-check"></i>
+                        Admin Dashboard
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -170,5 +226,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom Script -->
     <script src="js/script.js"></script>
+    
+    <?php
+    if(isset($_GET['contact']))
+    {
+    ?>
+    <script>
+    document.addEventListener("DOMContentLoaded",function(){
+        alert("Thank you! Your consultation request has been sent successfully.");
+    });
+    </script>
+    <?php
+    }
+    ?>
+
+    <?php
+    if(isset($_GET['review']))
+    {
+    ?>
+    <script>
+    document.addEventListener("DOMContentLoaded",function(){
+        alert("Thank you! Your review has been submitted successfully.");
+    });
+    </script>
+    <?php
+    }
+    ?>
 </body>
 </html>
